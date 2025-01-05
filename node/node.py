@@ -127,8 +127,8 @@ NODE_DISPLAY_NAME_MAPPINGS = {
 def addLoopType(t):
     NODE_CLASS_MAPPINGS["LoopStart_" + t] = type("LoopStart_" + t, (LoopStart, ), { "RETURN_TYPES": (t,) })
     NODE_CLASS_MAPPINGS["LoopEnd_" + t] = type("LoopEnd_" + t, (LoopEnd, ), { "LOOP_TYPE": (t,) })
-    NODE_DISPLAY_NAME_MAPPINGS["LoopStart_" + t] = ["LoopStart_" + t]
-    NODE_DISPLAY_NAME_MAPPINGS["LoopEnd_" + t] = ["LoopEnd_" + t]
+    NODE_DISPLAY_NAME_MAPPINGS["LoopStart_" + t] = "LoopStart_" + t
+    NODE_DISPLAY_NAME_MAPPINGS["LoopEnd_" + t] = "LoopEnd_" + t
 
 
 #SEGS
